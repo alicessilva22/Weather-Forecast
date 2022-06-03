@@ -3,7 +3,7 @@
 ## Table of Contents
 1. [Description](#description) 
 2. [Usage](#usage)
-3. [Visuals](#visuals)
+3. [Resources](#resources)
 
 ## Description
 
@@ -11,29 +11,26 @@ A weather dashboard that runs in the browser and features dynamically updated HT
 
 ## Usage
 
-- Time blocks were created on the html page to allow events to be entered and the business hours were set from 9 am to 5 pm.
+- The application starts with only the header and container with a search form
 
-- Rows were added in the following format under a tr tag:
-
-```js   
-
- <td>9AM</td>
- <td>
-  <textarea id="9"></textarea>
- </td>
- <td>
-  <button id="9" class='saveBtn'>Save</button>
- </td>
+```html
+            <div class="container">
+                <!-- search bar that allows user to input desired city -->
+                <h3>Seach for a City</h3>
+                <form id="search-form" class="d-flex">
+                    <input id="searched-city" type="text" placeholder="Charlotte" type="search">
+                    <br>
+                    <button id="search-btn">Search</button>
+                </form>
 ```
 
-- Moment.js was used to display current time at the top of the calendar.
+- When city is seached the other components are created with Event Listener
 
-- In the scrypt.js file a function was created to set the color of the time block to indicate whether it is in the past, present, or future also using moment.js.
+- From value input in the search bar One Weather is asked in order to retrieve current weather data.
+Viwer can see current weather information.
 
-- Also in the scrypt.js file code was created to add tasks to local storage.
 
 
-## Visuals
 ![Calendar Full Page](./assets/images/Work-Day-Scheduler.png)
 
 
