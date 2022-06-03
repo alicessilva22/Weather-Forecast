@@ -24,14 +24,12 @@ A weather dashboard that runs in the browser and features dynamically updated HT
                 </form>
 ```
 
-- When city is seached the other components are created with Event Listener
+- When city is seached the other components are dynamically created with Event Listener
 
-- From value input in the search bar One Weather is asked in order to retrieve current weather data.
-Viwer can see current weather information.
+- From value input in the search bar, One Weather is asked in order to retrieve current weather data.
+Viewer can see current weather information.
 
-
-
-![Calendar Full Page](./assets/images/Work-Day-Scheduler.png)
+![City Container Data](./assets/images/Weather-Forecast.png)
 
 
 ## Resources
