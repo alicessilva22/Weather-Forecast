@@ -1,0 +1,16 @@
+.current-container {
+    display: flex;
+    border-width: 10px;
+    justify-content: space-between;
+}
+
+.five-day {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: rgb(91, 162, 185);
+    width: 100px;
+    height: 100px;
+}

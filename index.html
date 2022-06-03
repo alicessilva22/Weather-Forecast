@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Forecast</title>
-    <!-- <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -14,42 +15,27 @@
         <h1>Weather Dashboard</h1>
     </header>
     <main>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 current-container">
             <div class="container">
                 <h3>Seach for a City</h3>
-                <form id="search-form" class="d-flex" action="search">
-                    <input type="text" placeholder="Charlotte" type="search">
-                    <button>Search</button>
+                <form id="search-form" class="d-flex">
+                    <input id="searched-city" type="text" placeholder="Charlotte" type="search">
+                    <br>
+                    <button id="search-btn">Search</button>
                 </form>
                 <div class="column">
-                    <div class="d-flex flex-col mx-auto">
-                        <button class="btn btn-secondary" type="button">Charlotte</button>
-                        <button class="btn btn-secondary" type="button">New York</button>
-                        <button class="btn btn-secondary" type="button">Atlanta</button>
-                        <button class="btn btn-secondary" type="button">Raleigh</button>
-                        <button class="btn btn-secondary" type="button">Orlando</button>
-                    </div>
+                    <div id="history-btns" class="d-flex flex-col mx-auto=s"></div>
                 </div>
             </div>
-            <div class="container"></div>
-            <div class="row">
-                <div class="card">
-                    <h4>Today</h4>
-                </div>
-                <div class="card">
-                    <h4>Tomorrow</h4>
-                </div>
-                <div class="card">
-                    <h4>3rd Day</h4>
-                </div>
-                <div class="card">
-                    <h4>4th Day</h4>
-                </div>
-                <div class="card">
-                    <h4>5th Day</h4>
-                </div>
+            <div class="box current-forecast">
+                <h1 class="city-name"></h1>
+                <p class="temp"></p>
+                <p class="humidity"></p>
+                <p class="wind"></p>
+                <p class="uvi"></p>
             </div>
-
+        </div>
+        <div class="five-day"></div>
     </main>
     <script src="./assets/scrypt.js"></script>
 </body>
