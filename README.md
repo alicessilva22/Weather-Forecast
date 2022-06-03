@@ -34,7 +34,7 @@ Viewer can see current weather information.
 
 ## Resources
 
-- [Repository](https://github.com/alicessilva22/Calendar-Module05)
-- [Live Site](https://alicessilva22.github.io/Calendar-Module05/)
+- [Repository](https://github.com/alicessilva22/Weather-Forecast)
+- [Live Site](https://alicessilva22.github.io/Weather-Forecast/)
 
 
