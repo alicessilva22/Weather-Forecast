@@ -59,22 +59,19 @@ function getFiveDay(lat, lon) {
         fiveDayContainer.append(fiveDayCard)
 
         var fiveDateEl = document.createElement('p');
-
         var fiveTempEl = document.createElement('p');
-
         var fiveHumidityEl = document.createElement('p');
+        var fiveUviEl = document.createElement('p');
 
         fiveHumidityEl.innerHTML = "Humidity: " + (fiveData.daily[i].humidity) + "%";
-
         fiveTempEl.innerHTML = "Temp: " + (fiveData.daily[i].temp) + " &#176F";
+        fiveUviEl.innerHTML = "UVI: " + (fiveData.daily[i].uvi);
 
 
         fiveDayCard.append(fiveDateEl)
-
         fiveDayCard.append(fiveTempEl)
-
         fiveDayCard.append(fiveHumidityEl)
-        
+        fiveDayCard.append(fiveUviEl)
         
       }
       currentUvi.textContent = "UVI: " + fiveData.current.uvi;
