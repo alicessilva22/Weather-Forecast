@@ -10,7 +10,8 @@
 }
 
 .card {
+    text-justify: auto;
     background-color: rgb(91, 162, 185);
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 200px;
 }
