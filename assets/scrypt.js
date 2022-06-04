@@ -51,9 +51,36 @@ function getFiveDay(lat, lon) {
 
       for (var i = 1; i < 6; i++) {
         var fiveDayCard = document.createElement('div')
+        
+        // var fiveIndex = i;
+        // // var Date = new Date(fiveData.daily[fiveIndex].dt * 1000);
+        
         fiveDayCard.classList.add('card')
         fiveDayContainer.append(fiveDayCard)
+
+        var fiveDateEl = document.createElement('p');
+
+        var fiveTempEl = document.createElement('p');
+
+        var fiveHumidityEl = document.createElement('p');
+
+        fiveHumidityEl.innerHTML = "Humidity: " + (fiveData.daily[i].humidity) + "%";
+
+        fiveTempEl.innerHTML = "Temp: " + (fiveData.daily[i].temp) + " &#176F";
+
+
+        fiveDayCard.append(fiveDateEl)
+
+        fiveDayCard.append(fiveTempEl)
+
+        fiveDayCard.append(fiveHumidityEl)
+        
+        
       }
       currentUvi.textContent = "UVI: " + fiveData.current.uvi;
+
+
+    // var dayOneMax = fiveData.dayly.1.temp.max
+    // console.log(dayOneMax);
     });
 }
